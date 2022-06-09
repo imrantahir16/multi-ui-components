@@ -1,0 +1,71 @@
+.card {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 300px;
+  /* height: 450px; */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+img {
+  border-radius: 10px;
+  width: 270px;
+}
+
+.like-btn {
+  background-color: #ffb3c2;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+h2 {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.card-header {
+  margin-left: 10px;
+}
+
+.card-rating {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 20px;
+  gap: 5px;
+  align-items: center;
+}
+
+.review {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+button {
+  width: 100%;
+  border-radius: 12px;
+  padding: 15px 5px;
+  border: unset;
+  background-color: #da7888;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.rate {
+  display: flex;
+  margin-top: 10px;
+}
