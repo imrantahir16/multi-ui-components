@@ -1,0 +1,50 @@
+.cube {
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cube h1,
+.cube h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 98px;
+  margin: 0;
+  padding: 0;
+}
+
+.default-state,
+.active-state {
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s ease;
+  transform-origin: center center -50px;
+  width: 100%;
+}
+
+.default-state {
+  background-color: #563d7c;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.active-state {
+  background-color: #322348;
+  transform: perspective(1000px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.cube:hover .default-state {
+  transform: perspective(1000px) rotateX(90deg) rotateY(0) rotateZ(0deg);
+}
+
+.cube:hover .active-state {
+  z-index: 99999;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+}
